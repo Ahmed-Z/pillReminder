@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="medecin ID" />
+
+            <TextView
+                android:id="@+id/medecinId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="medecinID" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Programme"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nomProgramme"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Programme"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="email Patient" />
+
+            <TextView
+                android:id="@+id/emailPatient"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Medicament"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/medicament"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="medicament"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Date debut"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateDebut"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="date Debut"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Date fin"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateFin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="dateFin" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="fois Par Jour"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foisParJour"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="fois Par Jour" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Prise 1"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prise1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="prise1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Prise 2"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prise2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="prise2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Prise 3"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prise3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="prise3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Description"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="description" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Quantité"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantité"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="quantité" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Supprimer"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

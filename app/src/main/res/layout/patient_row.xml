@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Nom"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nomPatient"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Nom"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Prenom"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prenomPatient"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="prenom"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Email"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailPatient"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Email"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Age"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/agePatient"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/age"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="ID patient" />
+
+            <TextView
+                android:id="@+id/idPatient"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Id ptient" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Maladie"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/maladiePatient"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="@string/maladie" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="ID Medecin" />
+
+            <TextView
+                android:id="@+id/docteurId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                tools:text="Docteur ID" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Température"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="Temperature" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Pression Artérielle"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pressionArtérielle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="pression Artérielle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Rythme Cardiaque"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rythmeCardiaque"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="rythme Cardiaque" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Poids"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/poids"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cardview_light_background"
+                tools:text="poids" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Glycémie" />
+
+            <TextView
+                android:id="@+id/glycémie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                tools:text="glycémie" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Supprimer"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">pillReminder</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="login">Login</string>
+    <string name="ajout_malade">Ajouter un malade</string>
+    <string name="ajout_programme">Ajouter un programme</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+    <string name="age">Age</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="maladie">Maladie</string>
+    <string name="date_debut">Date début</string>
+    <string name="program_name">Nom du programme</string>
+    <string name="email_patient">Email du patient</string>
+    <string name="medicament">Médicament</string>
+    <string name="date_fin">Date fin</string>
+    <string name="prise1">Prise 1</string>
+    <string name="prise2">Prise 2</string>
+    <string name="prise3">Prise 3</string>
+    <string name="description">Description</string>
+    <string name="ajouter_programme">Ajouter Programme</string>
+    <string name="mesures">Mesure</string>
+    <string name="temperature">Temperature</string>
+    <string name="pressionArtérielle">Pression Artérielle</string>
+    <string name="rythmeCardiaque">Rythme Cardiaque</string>
+    <string name="poids">Poids</string>
+    <string name="glycémie">Glycémie</string>
+    <string name="gerer_patient">Gerer Patient(s)</string>
+    <string name="ajouter_patient">Ajouter Patient</string>
+    <string name="programme">Programmes</string>
+    <string name="connection">Connection</string>
+    <string name="gerer_programme">Gerer Programme(s)</string>
+
+    <string-array name="nbrefois">
+        <item>1/Jr</item>
+        <item>2/Jr</item>
+        <item>3/Jr</item>
+    </string-array>
+    <string-array name="quantité">
+        <item>pilule(s)</item>
+        <item>ampoule(s)</item>
+        <item>capsule(s)</item>
+        <item>goutte(s)</item>
+        <item>gram(s)</item>
+        <item>milligramme(s)</item>
+        <item>millilitre(s)</item>
+        <item>paquet(s)</item>
+        <item>cuillère(s) à café</item>
+        <item>cuillerée(s) à soupe</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">MAP</string>
+    <string name="localiser_patient">Localiser patient(s)</string>
+</resources>

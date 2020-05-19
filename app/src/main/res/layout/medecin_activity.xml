@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonAjoutMalade"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:shadowColor="@color/common_google_signin_btn_text_dark_focused"
+        android:text="@string/ajout_malade"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/buttonAjoutProgramme"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/ajout_programme"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAjoutMalade"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonGererPatient"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/gerer_patient"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAjoutProgramme"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonGererProgramme"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/gerer_programme"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGererPatient"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/localiserButton"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/localiser_patient"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGererProgramme"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
