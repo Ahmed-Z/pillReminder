@@ -16,8 +16,6 @@ public class Patient {
     private String latitude;
     private String longitude;
 
-
-
     public Patient() {
     }
 

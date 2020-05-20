@@ -3,7 +3,7 @@
     <string name="email">Email</string>
     <string name="password">Mot de passe</string>
     <string name="login">Login</string>
-    <string name="ajout_malade">Ajouter un malade</string>
+    <string name="ajout_malade">Ajouter un patient</string>
     <string name="ajout_programme">Ajouter un programme</string>
     <string name="nom">Nom</string>
     <string name="prenom">Prenom</string>
@@ -42,7 +42,7 @@
         <item>ampoule(s)</item>
         <item>capsule(s)</item>
         <item>goutte(s)</item>
-        <item>gram(s)</item>
+        <item>gramme(s)</item>
         <item>milligramme(s)</item>
         <item>millilitre(s)</item>
         <item>paquet(s)</item>
@@ -52,4 +52,5 @@
     <string name="title_activity_maps">Map</string>
     <string name="map">MAP</string>
     <string name="localiser_patient">Localiser patient(s)</string>
+    <string name="activer_alarm">ACTIVER nofication</string>
 </resources>
