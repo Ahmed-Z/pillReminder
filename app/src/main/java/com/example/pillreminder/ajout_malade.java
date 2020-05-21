@@ -10,14 +10,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,7 +41,6 @@ public class ajout_malade extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance();
         mDatabaseReference = mDatabase.getReference().child("Users");
         mAuth = FirebaseAuth.getInstance();
-
         emailField = findViewById(R.id.emailField);
         passwordField = findViewById(R.id.passwordField);
         nomField = findViewById(R.id.nomField);
@@ -89,10 +86,8 @@ public class ajout_malade extends AppCompatActivity {
                 @Override
                 public void onSuccess(AuthResult authResult) {
                     if (authResult != null){
-                        //age = Integer.parseInt(ageString);
                         id = mAuth.getCurrentUser().getUid();
                         Map<String,String> dataToSave = new HashMap<>();
-
                         DatabaseReference currentUserDb = mDatabaseReference.child((id));
                         dataToSave.put("nom",nom);
                         dataToSave.put("id",id);

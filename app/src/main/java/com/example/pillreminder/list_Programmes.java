@@ -25,7 +25,6 @@ import java.util.List;
 
 public class list_Programmes extends AppCompatActivity {
     private DatabaseReference databaseReference;
-    private DatabaseReference databaseReferenceProgramme;
     private FirebaseDatabase database;
     private FirebaseAuth mAuth;
     private RecyclerView recyclerView;
@@ -36,7 +35,6 @@ public class list_Programmes extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list__programmes);
 
@@ -65,9 +63,16 @@ public class list_Programmes extends AppCompatActivity {
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
 
                 Programme programme = dataSnapshot.getValue(Programme.class);
-                if (programme.getEmailPatient().equals(currentUserEmail) || programme.getMedecinId().equals(currentUserID)){
-                    Log.d("TAG",programme.getEmailPatient());
-
+                if (programme.getEmailPatient().equals(currentUserEmail)){
+                    ProgrammeList.add(programme);
+                    programmeRecyclerAdapter = new programmeRecyclerAdapter(list_Programmes.this,ProgrammeList);
+                    recyclerView.setAdapter(programmeRecyclerAdapter);
+                    programmeRecyclerAdapter.notifyDataSetChanged();
+                }
+                Log.d("current user",currentUserID);
+                Log.d("medecin id",programme.getMedecinId());
+                if (programme.getMedecinId().equals(currentUserID)){
+                    Log.d("TAG","we are in");
                     ProgrammeList.add(programme);
                     programmeRecyclerAdapter = new programmeRecyclerAdapter(list_Programmes.this,ProgrammeList);
                     recyclerView.setAdapter(programmeRecyclerAdapter);

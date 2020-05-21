@@ -30,11 +30,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import android.util.Log;
-
-import java.io.IOException;
-import java.util.List;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase database;
@@ -59,11 +54,6 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
         databaseReference = database.getReference("message");
 
-
-
-
-
-
       mAuthListener = new FirebaseAuth.AuthStateListener() {
           @Override
           public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -73,8 +63,6 @@ public class MainActivity extends AppCompatActivity {
               }
           }
       };
-
-
 
         loginButton.setOnClickListener(new View.OnClickListener() {
           @Override
@@ -123,6 +111,4 @@ public class MainActivity extends AppCompatActivity {
             mAuth.removeAuthStateListener(mAuthListener);
         }
     }
-
-
 }

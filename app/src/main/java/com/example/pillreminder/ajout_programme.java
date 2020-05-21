@@ -3,7 +3,6 @@ package com.example.pillreminder;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
@@ -20,7 +19,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -81,7 +79,6 @@ public class ajout_programme extends AppCompatActivity {
         descriptionField = findViewById(R.id.descriptionField);
         database = FirebaseDatabase.getInstance();
         quantiteField = findViewById(R.id.quantiteField);
-
         Calendar cal = Calendar.getInstance();
         final int hour = cal.get(Calendar.HOUR_OF_DAY);
         final int minute = cal.get(Calendar.MINUTE);
@@ -109,6 +106,7 @@ public class ajout_programme extends AppCompatActivity {
                 timePickerDialog.show();
             }
         });
+
         timeField2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,6 +119,7 @@ public class ajout_programme extends AppCompatActivity {
                 timePickerDialog.show();
             }
         });
+
         timeField3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -134,12 +133,10 @@ public class ajout_programme extends AppCompatActivity {
             }
         });
 
-
         ArrayAdapter<String> myAdapter = new ArrayAdapter<>(ajout_programme.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.nbrefois));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerField.setAdapter(myAdapter);
-
         ArrayAdapter<String> myAdapter2 = new ArrayAdapter<>(ajout_programme.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.quantité));
         myAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -237,9 +234,6 @@ public class ajout_programme extends AppCompatActivity {
                                 Intent intent = new Intent(ajout_programme.this, medecinDashboard.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(intent);
-
-
-
                             }
                             else {
                                 Toast.makeText(ajout_programme.this, "Patient n'existe pas", Toast.LENGTH_LONG).show();
@@ -248,7 +242,6 @@ public class ajout_programme extends AppCompatActivity {
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
-
                         }
                     });
 
@@ -256,15 +249,10 @@ public class ajout_programme extends AppCompatActivity {
                 else{
                     Toast.makeText(ajout_programme.this, "Information missing or invalid", Toast.LENGTH_LONG).show();
                 }
-
-
-
-
             }
         });
-
-
     }
+
     @Override
     protected void onStart() {
         super.onStart();

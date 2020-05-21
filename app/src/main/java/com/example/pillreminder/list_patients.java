@@ -20,7 +20,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,10 +41,6 @@ public class list_patients extends AppCompatActivity {
         setContentView(R.layout.list_patients);
         deleteButton = findViewById(R.id.deleteButton);
         idPatientField = findViewById(R.id.idPatient);
-//        userid = idPatientField.getText().toString();
-//        Log.d("TAG",userid);
-
-
     }
 
     @Override
